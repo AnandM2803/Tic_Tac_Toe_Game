@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb); 
+    font-family: 'Arial', sans-serif;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#heading {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #333;
+    text-shadow: 2px 2px #fff;
+}
+#message {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    background-color: #ffeb3b; 
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+#GridBoard {
+    border: 5px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 306px; 
+    height: 306px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse; 
+}
+tr td {
+    border: 2px solid #333;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 2.5em;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+tr td:hover {
+    background: rgb(181, 230, 107); 
+    transform: scale(1.05); 
+}
